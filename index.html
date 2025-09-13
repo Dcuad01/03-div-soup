@@ -7,51 +7,60 @@
   </head>
   <body>
     <div class="container">
-      <div class="top-area">
+      <header class="top-area">
         <div class="logo-area">
-          <div class="logo-text">Roam &amp; Reflect</div>
+          <h1 class="logo-text">Roam &amp; Reflect</h1>
         </div>
-        <div class="menu-area">
-          <div class="menu-item">Home</div>
-          <div class="menu-item">About</div>
-          <div class="menu-item">Contact</div>
-        </div>
-      </div>
-      <div class="main-area">
-        <div class="content-area">
-          <div class="post-wrapper">
-            <div class="post-image-wrapper">
+        <nav class="menu-area" aria-label="Primary">
+          <ul class="menu-list">
+            <li class="menu-item"><a class="menu-link" href="#">Home</a></li>
+            <li class="menu-item"><a class="menu-link" href="#">About</a></li>
+            <li class="menu-item"><a class="menu-link" href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="main-area">
+        <section class="content-area">
+          <article class="post-wrapper">
+            <figure class="post-image-wrapper">
               <img
+                class="post-image"
                 src="img/post-image.jpg"
                 alt="Green mountain across body of water"
               />
-            </div>
+            </figure>
             <div class="post-text-area">
-              <div class="post-heading">Exploring the Mountains</div>
-              <div class="post-subtext">
+              <h2 class="post-heading">Exploring the Mountains</h2>
+              <p class="post-subtext">
                 A brief look into my weekend adventures exploring mountain
                 trails and enjoying nature's beauty.
-              </div>
+              </p>
               <div class="button-area">
-                <div class="button">Read More</div>
+                <button class="button" type="button">Read More</button>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="sidebar-area">
-          <div class="sidebar-widget">
-            <div class="sidebar-title">Recent Posts</div>
-            <div class="sidebar-item">A Day by the Lake</div>
-            <div class="sidebar-item">City Life vs Nature</div>
-            <div class="sidebar-item">Hiking Essentials</div>
-            <div class="sidebar-item">Kayaking Tips</div>
-            <div class="sidebar-item">Camping Gear Checklist</div>
-          </div>
-        </div>
-      </div>
-      <div class="bottom-area">
-        <div class="footer-text">© 2026 My Blog</div>
-      </div>
+          </article>
+        </section>
+
+        <aside class="sidebar-area" aria-label="Sidebar">
+          <section class="sidebar-widget">
+            <h2 class="sidebar-title">Recent Posts</h2>
+            <ul class="sidebar-list">
+              <li class="sidebar-item"><a class="sidebar-link" href="#">A Day by the Lake</a></li>
+              <li class="sidebar-item"><a class="sidebar-link" href="#">City Life vs Nature</a></li>
+              <li class="sidebar-item"><a class="sidebar-link" href="#">Hiking Essentials</a></li>
+              <li class="sidebar-item"><a class="sidebar-link" href="#">Kayaking Tips</a></li>
+              <li class="sidebar-item"><a class="sidebar-link" href="#">Camping Gear Checklist</a></li>
+            </ul>
+          </section>
+        </aside>
+      </main>
+
+      <footer class="bottom-area">
+        <p class="footer-text">© 2026 My Blog</p>
+      </footer>
     </div>
   </body>
+</html>
 </html>

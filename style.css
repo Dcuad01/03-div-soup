@@ -15,6 +15,7 @@ body {
   overflow: hidden;
 }
 
+/* Header */
 .top-area {
   background: linear-gradient(90deg, #232526 0%, #414345 100%);
   padding: 28px 32px;
@@ -24,14 +25,23 @@ body {
   align-items: center;
 }
 
-.top-area .logo-area .logo-text {
+.logo-text {
   font-size: 28px;
   font-weight: bold;
   letter-spacing: 1px;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin: 0; /* reset heading default margin */
 }
 
-.top-area .menu-area .menu-item {
+/* Primary nav */
+.menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu-item {
   display: inline-block;
   margin-left: 24px;
   cursor: pointer;
@@ -40,11 +50,17 @@ body {
   border-radius: 6px;
   transition: background 0.18s, color 0.18s;
 }
-.top-area .menu-area .menu-item:hover {
+.menu-item:hover {
   background: #fff;
   color: #232526;
 }
+.menu-link {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
 
+/* Layout */
 .main-area {
   display: flex;
   padding: 32px 32px 24px 32px;
@@ -52,12 +68,13 @@ body {
   background: #f4f6fa;
 }
 
-.main-area .content-area {
+.content-area {
   width: 70%;
   padding-right: 0;
 }
 
-.main-area .content-area .post-wrapper {
+/* Post */
+.post-wrapper {
   background-color: #fff;
   border: 1px solid #e3e7ee;
   padding: 22px 22px 18px 22px;
@@ -65,30 +82,30 @@ body {
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
   transition: box-shadow 0.18s;
 }
-.main-area .content-area .post-wrapper:hover {
+.post-wrapper:hover {
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
 }
 
-.post-wrapper .post-image-wrapper img {
+.post-image {
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
-.post-wrapper .post-text-area .post-heading {
+.post-heading {
   font-size: 22px;
   margin: 18px 0 8px;
   font-weight: 600;
   color: #232526;
 }
 
-.post-wrapper .post-text-area .post-subtext {
+.post-subtext {
   font-size: 15px;
   color: #5a5a5a;
   margin-bottom: 8px;
 }
 
-.post-wrapper .post-text-area .button-area .button {
+.button {
   display: inline-block;
   background: linear-gradient(90deg, #007bff 0%, #00c6ff 100%);
   color: #fff;
@@ -101,25 +118,29 @@ body {
   box-shadow: 0 2px 8px rgba(0, 123, 255, 0.08);
   transition: background 0.18s, box-shadow 0.18s;
   border: none;
+  text-decoration: none; /* for anchor usage */
+  -webkit-appearance: none;
+  appearance: none;
 }
-.post-wrapper .post-text-area .button-area .button:hover {
+.button:hover {
   background: linear-gradient(90deg, #0056b3 0%, #007bff 100%);
   box-shadow: 0 4px 16px rgba(0, 123, 255, 0.16);
 }
 
-.main-area .sidebar-area {
+/* Sidebar */
+.sidebar-area {
   width: 30%;
   padding-left: 0;
   background: #f8fafc;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
-  padding: 18px 18px 18px 18px;
+  padding: 18px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
-.sidebar-area .sidebar-widget .sidebar-title {
+.sidebar-title {
   font-weight: bold;
   margin-bottom: 14px;
   font-size: 17px;
@@ -127,7 +148,13 @@ body {
   letter-spacing: 0.5px;
 }
 
-.sidebar-area .sidebar-widget .sidebar-item {
+.sidebar-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-item {
   font-size: 15px;
   margin-bottom: 8px;
   cursor: pointer;
@@ -135,11 +162,17 @@ body {
   border-radius: 5px;
   transition: background 0.16s, color 0.16s;
 }
-.sidebar-area .sidebar-widget .sidebar-item:hover {
+.sidebar-item:hover {
   background: #e3e7ee;
   color: #007bff;
 }
+.sidebar-link {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
 
+/* Footer */
 .bottom-area {
   text-align: center;
   background: linear-gradient(90deg, #232526 0%, #414345 100%);
